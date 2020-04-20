@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+/* imported font */
+
+
+/* css for body of page*/
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height:8vh;
+  background-color:  #2654a7ed;
+  margin-bottom: 0px
+}
+.new-links{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+
+
+}
+
+.logo{
+  letter-spacing:5px;
+  font-size: 12px;
+
+}
+
+.nav{
+  display: flex;
+  justify-content:space-around;
+  width: 50%;
+}
+.new-navlink{
+  display: flex;
+  justify-content:space-around;
+  width: 50%;
+}
+.burger div{
+  width: 25px;
+  height:5px;
+  margin: 5px;
+  background-color:rgba(226, 226, 226);
+  transition: all 0.3s ease;
+
+}
+.burger{
+  display: none;
+  cursor: pointer;
+}
+.nav a:hover{
+   font-size: 18px;
+}
+.new-navlink a:hover{
+  font-size: 18px;
+}
+.nav li{
+  list-style: none;
+}
+.new-navlink li{
+  list-style:none;
+}
+header a{
+  color: #ece8e8;
+  text-decoration: none;
+  font-size: 14px;
+}
+.new-navlink a{
+    color: #ece8e8;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 14px
+}
+.new-links{
+  display: none;
+}
+.lower{
+  display:inline-block;
+  background-image:url('../images/meet.jpg');
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+/* css for png image on notification section */
+.c{
+  width: 100%;
+  height:100%;
+  align-items: center;
+  position: relative;
+
+}
+.c .content{
+  position: absolute;
+  width: 33%;
+  left:33.8%;
+  top:30%;
+  text-align: center;
+
+}
+
+.c .content h2{
+      top:60%;
+      left: 40%;
+      margin-top:0%;
+      font-size:18px;
+      font-style: bolder;
+      font-weight:400px;
+      letter-spacing: 5px;
+      color:  #ad8104;
+}
+.c .content h1{
+  top: 60%;
+  left:25%;
+  margin-top: 10px;
+  font-size: 50px;
+  font-style: oblique;
+  letter-spacing: 5px;
+  font-weight: lighter;
+  color: #694e4e;
+  margin-bottom: 20px;
+}
+
+.c .content p{
+  letter-spacing: 5px;
+  font-family:serif;
+  font-size: 15px;
+  position: relative;
+  left: 1%;
+  top:8%;
+  font-weight: bold;
+  font-style: italic;
+}
+.c button{
+  font-size: 11px;
+  font-style: italic;
+  font-weight: bolder;
+  border: none;
+  padding: 20px 34px;
+  display: block;
+  margin: 24px auto ;
+  background-color:#6b7c35;
+  cursor: pointer;
+  margin-left: 30.8%;
+  border-radius: 5rem;
+  color: white;
+
+}
+.c button:hover{
+  background-color: #d05d3a;
+  font-size: 12px;
+}
+
+.c img{
+
+  width:36%;
+  left: 32%;
+  position: absolute;
+  top: 7%;
+  display: inline-block;
+
+
+}
+/* css for text on notification section */
+.content h3{
+  position: relative;
+  text-align: center;
+  padding-top:20px;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  color:  #2654a7ed;
+  letter-spacing: 5px;
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+.container_content img{
+  width: 49.0%;
+}
+/* css for body of information cards on body of site*/
+.body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  min-height:250px;
+
+}
+.container_content{
+  position: relative;
+  width:1000px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.container_content .card{
+  position: relative;
+  height: 259px;
+  padding: 5px;
+  background: #7296b6;
+  display: flex;
+  width:30%;
+  margin: 2px 10px;
+}
+
+.container_content .card .imgbx{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #d2ac85;
+  z-index:1;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  border-radius: 0.2em;
+}
+
+.container_content .card:hover .imgbx {
+  width: 125px;
+  height:125px;
+  left: -17px;
+  top:calc(50% - 75px);
+  transition: 0.5s ease-in-out;
+  background: #3a64af;
+  border-radius: 0.2em;
+}
+
+.container_content .card .imgbx::before{
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  text-align: center;
+  font-size: 4em;
+  color: rgba(255, 255, 255, .05);
+  font-weight: 700;
+}
+.container_content .card:hover .imgbx img{
+  max-width: 100px;
+
+}
+
+.container_content .card .contents
+{
+    position: absolute;
+    right: 0;
+    width: calc(80% - 75px);
+    height: 80%;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container_content .card .contents h3{
+  margin-bottom: 5px;
+  font-size: 24px;
+  text-decoration: underline;
+}
+.container_content .card .contents a{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background: #333;
+  text-decoration: none;
+  color: #fff;
+}
+.container_content .card:hover .contents a{
+  background-color: #6b7c35;
+}
+/* css for the messages on homepage */
+.message_container{
+   width: 80%;
+   margin:auto;
+   overflow: hidden;
+}
+.main{
+  float: left;
+  width:70%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+.side{
+    float: right;
+    width: 30%;
+    background: #333;
+    color:#fff;
+    padding:30px;
+    box-sizing: border-box;
+}
+.side:hover{
+  background: #00121b;
+  color: #d2ac85;
+}
+.message_container p{
+  letter-spacing: 5px;
+  font-style: oblique;
+  font-family:'helvetica',sans-serif;
+  font-weight: lighter;
+}
+.message_container .main p{
+      font-weight: bold;
+}
+
+/* css for footer section */
+.footer{
+  width: 100%;
+  background: #00121b;
+  display: block;
+  margin-top: 10px;
+
+}
+.inner_footer{
+  width: 95%;
+  margin: auto;
+  padding: 30px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.footer-items{
+  width: 25%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+.footer-items h3{
+  padding: 10px 0;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer-items p{
+  color: grey;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 25px;
+}
+.border{
+  height: 2px;
+  width: 40px;
+  background: #ff9800;
+}
+.footer ul{
+  list-style: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing:0.5px;
+}
+.footer-items ul a{
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  transition: 0.3s ease;
+}
+.footer-items ul a:hover{
+  color: #ff9800;
+}
+.footer-items ul li{
+  margin: 10px 0;
+  height: 25px;
+}
+.footer-items button{
+  font-size: 11px;
+  font-style: italic;
+  font-weight: bolder;
+  border: none;
+  padding: 10px;
+  display: block;
+  background-color:#6b7c35;
+  cursor: pointer;
+  border-radius: 5rem;
+  color: white;
+
+}
+.footer-items button:hover{
+  background-color: #ff9800;
+}
+.footer-bottom{
+  padding: 10px;
+  background: #3d545f;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+/* css for Fadein effect of registeration notification section*/
+.res {
+  animation: Fadein 2s forwards;
+}
+
+@keyframes Fadein {
+  from{
+    opacity: 0;
+    transform: translateY(-2em);
+
+  }to{
+    opacity:1;
+      transform: translateY(0);
+  }
+
+}
+
+.content {
+  animation: Fadein 2s forwards;
+}
+/* css for Fadein effect for text on registeration section */
+@keyframes Fadein {
+  from{
+    opacity: 0;
+    transform: translateY(-2em);
+
+  }to{
+    opacity:1;
+      transform: translateY(0);
+  }
+
+}
+/* css to adjust size for responsive mobile view */
+@media (max-width:992px)
+{
+  .container_content{
+    width:1500px;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .container_content .card{
+    margin-top: 20px;
+    width: 400px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .container_content .card{
+    max-width: 300px;
+    flex-direction: column;
+    height: auto;
+  }
+  .container_content .card .imgbx
+  {
+    position: relative;
+
+  }
+   .container_content .card .imgbx,
+   .container_content .card:hover .imgbx{
+      width: 100%;
+      height: 200px;
+      left:0;
+
+   }
+   .container_content .card .imgbx img,
+   .container_content .card:hover .imgbx img{
+     max-width: 100px;
+   }
+   .container_content .card .contents{
+     position: relative;
+     width: 100%;
+   }
+   .main{
+     float: none;
+     width:100%;
+
+   }
+   .side{
+       float: none;
+       width: 100%;
+
+   }
+   .founder{
+     float: none;
+     width: 100%;
+   }
+   .motto{
+     float: none;
+     width: 100%;
+   }
+   .footer-items{
+     width: 100%;
+   }
+}
+
+@media(max-width:1085px){
+    .c img{
+      width: 40%;
+      height: 100%;
+      left: 30%
+    }
+    .c .content button{
+      position: relative;
+      left:0px;
+      padding: 9px;
+      margin: auto;
+      margin-top: 20%;
+    }
+}
+@media(max-width:663px){
+    .c .content{
+      width: 40.8%;
+      height: 100%;
+      letter-spacing: normal;
+      left:25%;
+      top:20%;
+      bottom: 20.9%;
+
+    }
+    .c img{
+      width: 60%;
+      height:100%;
+      left:14%;
+    }
+    .c .content p {
+      font-size: 13px;
+      t
+    }
+    .c .content h1{
+      font-size: 25px;
+      text-align: center;
+      margin-left:20px
+    }
+    .c .content h2{
+      font-size: 16px;
+    }
+    .c .content button{
+      position: relative;
+      left:0px;
+      padding: 9px;
+      margin: auto;
+      margin-top: 50%;
+    }
+
+@media(max-width:360px){
+  .c .content h1{
+    font-size: 14px;
+    margin-left: 1px;
+
+  }
+}
+/* css for navlink on mobile view of phone */
+@media screen and (max-width:1024px) {
+
+  .new-navlink{
+    width: 50%;
+  }
+}
+@media screen and (max-width:768px){
+
+    body{
+      overflow-x: hidden;
+    }
+    .nav{
+      display: none;
+      }
+    .new-links{
+    display: flex;
+    }
+  .new-navlink{
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    top:5.5vh;
+    background-color:#2654a7ed;
+    flex-direction: column;
+    align-items: center;
+    transform:translateX(100%);
+
+    transition: transform 0.5s ease-in;
+  }
+  .new-navlink li{
+    opacity: 0;
+  }
+  .burger{
+    display: block;
+  }
+  .nav-active{
+    transform: translateX(0%);
+}
+
+}
+
+@keyframes navlinkfade {
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+/* css for change in burger effect on navlink of mobile view */
+.toggle .line1{
+  transform: rotate(-45deg) translate(-6px,6px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+   transform: rotate(45deg) translate(-6px,-6px);
+}
+/* css to hide overflow of content on mobile veiw*/
+@media screen and (max-width:536px){
+  body{
+    overflow-x: hidden;
+
+  }
+}

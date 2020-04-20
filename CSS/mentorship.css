@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #f6f6fb;
+}
+/* css for middle section of page */
+.middle{
+  width: 100%;
+  height: 400px;
+  position: relative;
+  display: inline-block;
+  background:linear-gradient(135deg, rgba(49,24,131,0.7) 0%,rgba(72,56,149,0.7) 100%),url('../images/close.jpg') ;
+  background-position: center;
+}
+.middle h1{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'helvetica',sans-serif;
+  top:30%;
+  color: white;
+  position: relative;
+  text-decoration: underline;
+}
+/* css for text on page */
+.Mentorship-Message{
+  float: left;
+  width:100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.Mentorship-list{
+  float: left;
+  width:70%;
+  padding: 30px;
+  box-sizing: border-box;
+  line-height: 2rem;
+  color:#010202d4
+}
+
+.online-class{
+
+  line-height: 2.5rem;
+  width:70%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.Mentorship-Message p{
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+}
+.Mentorship-list h2{
+  margin-left: 100px;
+  text-decoration: underline;
+}
+.Mentorship-list li{
+  margin-left: 90px;
+}
+.Mentorship-list p{
+  margin-left: 70px;
+}
+
+.online-class h2{
+  margin-left: 100px;
+  text-decoration: underline;
+}
+.online-class p{
+  margin-left: 75px;
+
+}
+.online-class button{
+  padding: 10px;
+  border: none;
+  position: relative;
+  border-radius: 3rem;
+  margin-left: 100px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  background: #65a23a;
+  color: #333b44;
+  cursor: pointer;
+}
+.online-class button:hover{
+   background-color:#ff9800;
+}
+/* css for Fadein effect on middle section */
+.middle {
+  animation: Fadein 2s forwards;
+}
+
+@keyframes Fadein {
+  from{
+    opacity: 0;
+    transform: translateY(-2em);
+
+  }to{
+    opacity:1;
+      transform: translateY(0);
+  }
+
+}

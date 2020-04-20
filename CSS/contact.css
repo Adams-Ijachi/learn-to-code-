@@ -1,0 +1,48 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* css for middle section of page */
+.middle{
+  width: 100%;
+  height: 400px;
+  position: relative;
+  display: inline-block;
+  background:linear-gradient(135deg, rgba(49,24,131,0.7) 0%,rgba(72,56,149,0.7) 100%), url('../images/home.jpg') ;
+  background-position: center;
+}
+.middle h1{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'helvetica',sans-serif;
+  top:30%;
+  color: white;
+  position: relative;
+  text-decoration: underline;
+}
+.body h1{
+  letter-spacing: 3px;
+  text-decoration: underline;
+  font-style: italic;
+  color:black;
+}
+
+/* css for Fadein effect on middle section */
+.middle {
+  animation: Fadein 2s forwards;
+}
+
+@keyframes Fadein {
+  from{
+    opacity: 0;
+    transform: translateY(-2em);
+
+  }to{
+    opacity:1;
+      transform: translateY(0);
+  }
+
+}

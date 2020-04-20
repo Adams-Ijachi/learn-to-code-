@@ -1,0 +1,96 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* css for middle section of page */
+.middle{
+  width: 100%;
+  height: 400px;
+  position: relative;
+  display: inline-block;
+  background:linear-gradient(135deg, rgba(49,24,131,0.9) 0%,rgba(72,56,149,0.8) 100%), url('../images/biz.jpg') ;
+  background-position: center;
+}
+.middle h1{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'helvetica',sans-serif;
+  top:30%;
+  color: white;
+  position: relative;
+  text-decoration: underline;
+}
+/* css for messages on about us section*/
+.about-us_message{
+  float: left;
+  width:70%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.about-us_message h2{
+  font-size: 30px;
+  text-align: center;
+  font-style: oblique;
+  letter-spacing: 3px;
+  text-decoration:underline;
+  font-weight: bolder;
+
+}
+.about-us_message p{
+  letter-spacing: 3px;
+  line-height: 1.5em
+}
+.motto-container p{
+  letter-spacing: 3px;
+  line-height: 1.5em
+}
+.founder{
+  float: left;
+  box-sizing: border-box;
+  padding: 30px;
+  width: 70%;
+  left:10px;
+}
+
+.founder h3{
+  font-size: 30px;
+  font-style: oblique;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  text-decoration: underline;
+
+}
+.motto-container{
+  width: 80%;
+  margin:auto;
+  overflow: hidden;
+}
+.motto{
+  float: right;
+  width: 30%;
+  box-sizing: border-box;
+  padding: 30px;
+  color: #b3b790;
+  background-color:#3d2f7d;
+}
+.motto:hover{
+  background: #00121b;
+  color: #d2ac85;
+}
+/* css for Fadein effect on middle section */
+.middle {
+  animation: Fadein 2s forwards;
+}
+
+@keyframes Fadein {
+  from{
+    opacity: 0;
+    transform: translateY(-2em);
+
+  }to{
+    opacity:1;
+      transform: translateY(0);
+  }
+
+}
